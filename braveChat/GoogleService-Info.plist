@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>282502638894-8o55ogrn6c9063rui54cipl5thdcs233.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.282502638894-8o55ogrn6c9063rui54cipl5thdcs233</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC3p7C1Vme_Iz9VN6EcR19M1yRn3TwKadk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>282502638894</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.brave.chat</string>
+	<key>PROJECT_ID</key>
+	<string>bravechatswift</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bravechatswift.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:282502638894:ios:053e0fae60bcde5b511ebf</string>
+</dict>
+</plist>
