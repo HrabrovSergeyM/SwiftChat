@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		0B62819E235F0F4D00E35CAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B62819D235F0F4D00E35CAF /* README.md */; };
 		181A0634BB292AC84D0F5C62 /* Pods_braveChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0810D6CA3123C733DB14A8F7 /* Pods_braveChat.framework */; };
 		E92F1C9D29B953EE0025A8A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92F1C9C29B953EE0025A8A8 /* GoogleService-Info.plist */; };
+		E9F9962829B96BAC009B6595 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9962729B96BAC009B6595 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		0B62819D235F0F4D00E35CAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		17AEE5D3F6B1195731CB150E /* Pods-braveChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-braveChat.release.xcconfig"; path = "Target Support Files/Pods-braveChat/Pods-braveChat.release.xcconfig"; sourceTree = "<group>"; };
 		E92F1C9C29B953EE0025A8A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E9F9962729B96BAC009B6595 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F00C911E72FDA2CF5E5A1665 /* Pods-braveChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-braveChat.debug.xcconfig"; path = "Target Support Files/Pods-braveChat/Pods-braveChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
 				0B628184235DEE8400E35CAF /* Info.plist */,
 				E92F1C9C29B953EE0025A8A8 /* GoogleService-Info.plist */,
+				E9F9962729B96BAC009B6595 /* Constants.swift */,
 			);
 			path = braveChat;
 			sourceTree = "<group>";
@@ -127,7 +130,6 @@
 				F00C911E72FDA2CF5E5A1665 /* Pods-braveChat.debug.xcconfig */,
 				17AEE5D3F6B1195731CB150E /* Pods-braveChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -252,6 +254,7 @@
 				0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */,
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
+				E9F9962829B96BAC009B6595 /* Constants.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
 			);
