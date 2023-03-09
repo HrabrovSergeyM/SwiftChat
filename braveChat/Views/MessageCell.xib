@@ -18,14 +18,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="390" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1U7-5Z-m0x">
-                        <rect key="frame" x="10" y="10" width="370" height="60"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1U7-5Z-m0x">
+                        <rect key="frame" x="10" y="10" width="370" height="59"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hez-MD-L7g" userLabel="Message Bubble">
-                                <rect key="frame" x="0.0" y="0.0" width="310" height="60"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hez-MD-L7g" userLabel="Message Bubble">
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="59"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-Ch-Gli">
-                                        <rect key="frame" x="10" y="10" width="290" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-Ch-Gli">
+                                        <rect key="frame" x="10" y="10" width="290" height="39"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="BrandLightPurple"/>
                                         <nil key="highlightedColor"/>
@@ -39,12 +39,8 @@
                                     <constraint firstItem="cT7-Ch-Gli" firstAttribute="top" secondItem="hez-MD-L7g" secondAttribute="top" constant="10" id="qRZ-HK-aKr"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="6Z6-RG-95v">
-                                <rect key="frame" x="330" y="0.0" width="40" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="N0m-ZZ-sa5"/>
-                                    <constraint firstAttribute="height" constant="40" id="r8n-Qe-nMG"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="6Z6-RG-95v">
+                                <rect key="frame" x="330" y="0.0" width="40" height="36"/>
                             </imageView>
                         </subviews>
                     </stackView>
@@ -59,7 +55,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="cT7-Ch-Gli" id="DEU-5D-wS1"/>
-                <outlet property="messageBubble" destination="cT7-Ch-Gli" id="NNh-h7-i6d"/>
+                <outlet property="messageBubble" destination="hez-MD-L7g" id="JFF-nr-wxB"/>
                 <outlet property="rightImageView" destination="6Z6-RG-95v" id="WyB-ry-vCX"/>
             </connections>
             <point key="canvasLocation" x="129.7709923664122" y="32.04225352112676"/>

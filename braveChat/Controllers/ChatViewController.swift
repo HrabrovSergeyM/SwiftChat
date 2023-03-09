@@ -8,8 +8,8 @@ class ChatViewController: UIViewController {
     
     var messages: [Message] = [
         Message(sender: "1@2.com", body: "Hello"),
-        Message(sender: "aang@2.com", body: "Air"),
-        Message(sender: "azula@2.com", body: "Fire")
+        Message(sender: "aang@2.com", body: "I'm last Airbender. Can you help me?"),
+        Message(sender: "azula@2.com", body: "My name is...Nevermind.")
     ]
     
     
