@@ -17,7 +17,7 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.transform = CGAffineTransform(rotationAngle: -(CGFloat)(Double.pi));
+//        tableView.transform = CGAffineTransform(rotationAngle: -(CGFloat)(Double.pi));
         tableView.dataSource = self
         
         title = Constants.appName
@@ -49,6 +49,8 @@ class ChatViewController: UIViewController {
                             self.messages.append(newMessage)
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
                             }
                             
                         }
@@ -66,15 +68,16 @@ class ChatViewController: UIViewController {
                 data:
                     [Constants.FStore.senderField: messageSender,
                      Constants.FStore.bodyField: messageBody,
-                     Constants.FStore.dateField: -Date().timeIntervalSince1970]) { error in
+                     Constants.FStore.dateField: Date().timeIntervalSince1970]) { error in
                 if let e = error {
                     print("There was an issue saving data to Firestore, \(e)")
                 } else {
                     print("Successfully saved data")
+                    DispatchQueue.main.async {
+                        self.messageTextfield.text = ""
+                    }
                 }
             }
-        } else {
-            
         }
     }
     
@@ -98,7 +101,7 @@ extension ChatViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath)
             as! MessageCell
-        cell.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi));
+//        cell.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi));
         cell.label.text = message.body
         
         if message.sender == Auth.auth().currentUser?.email {
