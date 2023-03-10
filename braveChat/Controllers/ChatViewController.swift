@@ -17,7 +17,7 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.transform = CGAffineTransform(rotationAngle: -(CGFloat)(Double.pi));
         tableView.dataSource = self
         
         title = Constants.appName
@@ -66,7 +66,7 @@ class ChatViewController: UIViewController {
                 data:
                     [Constants.FStore.senderField: messageSender,
                      Constants.FStore.bodyField: messageBody,
-                     Constants.FStore.dateField: Date().timeIntervalSince1970]) { error in
+                     Constants.FStore.dateField: -Date().timeIntervalSince1970]) { error in
                 if let e = error {
                     print("There was an issue saving data to Firestore, \(e)")
                 } else {
@@ -96,6 +96,7 @@ extension ChatViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath)
             as! MessageCell
+        cell.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi));
         cell.label.text = messages[indexPath.row].body
         return cell
     }
